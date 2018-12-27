@@ -25,6 +25,9 @@ class TodoList extends Component {
       inputValue: e.target.value
     });
   }
+  // 子组件 传给当前父组件的方法
+  // 父组件传值给子组件： 以属性的方式传递
+  // 子组件传值给父组件： 以方法的方式传递
   deleteBtn(index) {
     const list = this.state.list;
     list.splice(index, 1);
